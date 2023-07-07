@@ -90,9 +90,9 @@ weights_matrix_cycle = [[0, 1, 0]]  # ............................. cycle
 weights_matrix_anomalies = [[0, 0, 1]] # .......................... anomalies
 
 # fonctions de loss personnalisés (pondérées)
-loss_ann = weighted_loss(weights_matrix_ann)
-loss_cycle = weighted_loss(weights_matrix_cycle)
-loss_anomalies = weighted_loss(weights_matrix_anomalies)
+loss_ann = myloss_fct(weights_matrix_ann)
+loss_cycle = myloss_fct(weights_matrix_cycle)
+loss_anomalies = myloss_fct(weights_matrix_anomalies)
 
 """### Modèle Torch
 
