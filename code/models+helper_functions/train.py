@@ -6,9 +6,9 @@ def format_time(seconds):
     td = timedelta(seconds=seconds)
     d = datetime(1, 1, 1) + td
 
-    if d.hour>0:
+    if d.hour > 0:
         return f"{d.hour}h {d.minute:02d}min {d.second:02d}s"
-    elif d.minute>0 :
+    elif d.minute > 0 :
         return f"{d.minute:02d}min {d.second:02d}s"
     elif d.second > 0:
       return f"{d.second:02d}s {d.microsecond // 1000}ms"
